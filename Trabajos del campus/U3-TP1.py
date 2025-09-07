@@ -1,3 +1,5 @@
+import random
+from statistics import mode, median, mean
 #punto 1
 edad = input("Ingrese su edad: ")
 if int(edad) >= 18:
@@ -35,6 +37,15 @@ if 8 <= len(contraseña) <= 14:
     print("Ha ingresado una contraseña correcta")
 else:
     print("Por favor ingrese una contraseña de entre 8 y 14 caracteres")
+
+#punto 6
+numeros_aleatorios = [random.randint(1, 100) for i in range(50)]
+if mean(numeros_aleatorios) > median(numeros_aleatorios) and median(numeros_aleatorios) > mode(numeros_aleatorios):
+    print("Sesgo positivo")
+elif mean(numeros_aleatorios) < median(numeros_aleatorios) and median(numeros_aleatorios) < mode(numeros_aleatorios):
+    print("Sesgo negativo")
+else:
+    print("No hay sesgo")
 
 #punto 7
 frase = input("Ingrese una frase: ")
