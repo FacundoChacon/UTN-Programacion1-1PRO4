@@ -1,10 +1,3 @@
-# ==============================
-# PRÁCTICO 11 - APLICACIÓN DE LA RECURSIVIDAD
-# ==============================
-# TECNICATURA UNIVERSITARIA EN PROGRAMACIÓN
-# ==========================================
-
-
 # 1) Factorial recursivo
 def factorial(n):
     if n == 0 or n == 1:      # Caso base
